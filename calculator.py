@@ -1,3 +1,5 @@
+import math
+
 # This function adds two numbers
 def add(x, y):
     return x + y
@@ -13,6 +15,10 @@ def multiply(x, y):
 # This function divides two numbers
 def divide(x, y):
     return x / y
+
+# This function square root
+def square(x):
+    return math.sqrt(x)
 
 # This function caclulating factorial
 def factorial(x):
