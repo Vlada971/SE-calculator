@@ -34,5 +34,39 @@ print("3.Multiply")
 print("4.Divide")
 print("5.Factorial")
 print("6.Square Root")
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+
+while True:
+    # Take input from the user
+    choice = input("Enter choice(1/2/3/4/5/6): ")
+
+    # Check if choice is one of the six options
+    if choice in ('1', '2', '3', '4', '5','6'):
+        
+        if choice == '1':
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            print(num1, "+", num2, "=", add(num1, num2))
+            
+        elif choice == '2':
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            print(num1, "/", num2, "=", divide(num1, num2))
+        elif choice == '5':
+            num1 = int(input("Enter first number: "))
+            print("Factorial ", num1, "is ", factorial(num1))
+        elif choice == '6':
+            num1 = int(input("Enter first number: "))
+            print("Square root of  ", num1, "is ", square(num1))
+        break
+    else:
+        print("Invalid Input")
