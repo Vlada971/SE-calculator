@@ -14,6 +14,13 @@ def multiply(x, y):
 def divide(x, y):
     return x / y
 
+# This function caclulating factorial
+def factorial(x):
+    fact = 1
+    for i in range(1,x+1):
+        fact = fact * i
+    return fact
+
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
